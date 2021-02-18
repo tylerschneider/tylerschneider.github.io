@@ -1,27 +1,77 @@
-.jumbotron {
-	background-image: url("../images/keyboard.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	padding: 10em 0;
+.bg-imgs img {
+	object-fit: cover;
+	object-position: center;
+	filter: opacity(50%);
+	transition: filter 1s;
 }
 
-h5 {
-	color: gray;
+.bg-imgs img:hover {
+	filter: opacity(100%);
 }
 
-h3 {
-	text-align: center;
-	text-decoration: underline;
+.logo{
+  height: 30vh;
+  position:absolute;
+  bottom: 0;
+  top: 0;
+  left:0;
+  right: 0;
+  margin: auto;
+  filter: drop-shadow(0 0 0.2rem black);
 }
 
-h1 {
-	font-size: 6em;
+.overlay-outer {
+	overflow: hidden;
+	position: relative;
+	background-color: red;
 }
 
-hr {
-	border-top: 1px solid #5F5F5F;
-	margin-left: 10%;
-	margin-right: 10%;
-	padding: 10px 0;
+.slider {
+	position:relative;
+	min-height: 150vh;
+	background-color: white;
+}
+
+#slider-1 {
+	top:100%;
+	transition: top 1s;
+}
+
+#slider-2 {
+	top:100%;
+	transition: top 1.5s;
+}
+
+#slider-3 {
+	top:100%;
+	transition: top 2s;
+}
+
+.overlay-outer:hover #slider-1 {
+	top: -10%;
+}
+
+.overlay-outer:hover #slider-2 {
+	top: -10%;
+}
+
+.overlay-outer:hover #slider-3 {
+	top: -10%;
+}
+
+#slider-1 {
+	background-color: white;
+	transform: skewY(20deg);
+}
+
+#slider-2 {
+	background-color: white;
+	box-shadow: inset 10px 0px 11px -11px #000000;
+	transform: skewY(20deg);
+}
+
+#slider-3 {
+	background-color: white;
+	box-shadow: inset 10px 0px 11px -11px #000000;
+	transform: skewY(20deg);
 }
