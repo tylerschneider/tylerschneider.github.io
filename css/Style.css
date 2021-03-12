@@ -145,3 +145,38 @@ h1 {
 .logo:hover + #logoHover .overlay-outer #bg-3 {
 	filter: opacity(100%);
 }
+
+
+
+.navbar
+{
+	height:10vh;
+}
+
+#header
+{
+	height:9vh;
+	padding: 0.3vh 1vw;
+	border-right: 2px solid gray;
+}
+
+.dropdown
+{
+	height: 9vh;
+	padding: 1vh;
+}
+
+.dropdown, .dropdown-item
+{
+	font-size: 3.5vh;
+	font-variant: small-caps;
+}
+
+.dropdown-menu
+{
+	border: 0px;
+}
+  
+.navbar .navbar-nav .nav-item:not(:last-child) {
+    border-right: 2px solid gray;
+  }
