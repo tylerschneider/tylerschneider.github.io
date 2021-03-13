@@ -151,13 +151,12 @@ h1 {
 .navbar
 {
 	height:10vh;
+	filter:opacity(100%) drop-shadow(0px 0 0.5rem black);
 }
 
 #header
 {
-	height:9vh;
-	padding: 0.3vh 1vw;
-	border-right: 2px solid gray;
+	max-height: 9vh;
 }
 
 .dropdown
@@ -176,7 +175,22 @@ h1 {
 {
 	border: 0px;
 }
+
+.dropdown:hover, 
+.dropdown:active, 
+.dropdown:focus 
+{
+	background-color:gray;
+}
   
-.navbar .navbar-nav .nav-item:not(:last-child) {
-    border-right: 2px solid gray;
-  }
+.navbar .navbar-nav .nav-item
+{
+    border-right: 1px solid lightgray;
+	border-left: 1px solid lightgray;
+}
+
+#sidebar
+{
+	background-color: white;
+	filter:opacity(100%) drop-shadow(5px 0 0.5rem black);
+}
