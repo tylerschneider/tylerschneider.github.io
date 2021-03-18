@@ -1,8 +1,19 @@
+html, body
+{
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
 h1 {
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
 	font-variant: small-caps;
 	font-size: 4em;
 	text-align: center;
+}
+
+.slider h1 {
+	font-size: 4vw;
 }
 
 h2 {
@@ -59,9 +70,6 @@ h2 {
   text-decoration: inherit;
 }
 
-#logoHover {
-}
-
 .logo:hover img {
 	margin-top: -3vh;
 }
@@ -87,6 +95,8 @@ h2 {
 	position: relative;
 	top:0;
 	left:0;
+	height:100vh;
+	width:100vw;
 }
 
 .slider {
@@ -144,6 +154,7 @@ h2 {
 	object-fit: cover;
 	object-position: center;
 	filter: opacity(30%);
+	height:100vh;
 	transition: filter 1s;
 }
 
