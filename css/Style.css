@@ -5,6 +5,27 @@ h1 {
 	text-align: center;
 }
 
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: darkgray; 
+}
+
+
 .logo{
   width: 30vw;
   height: 30vh;
@@ -191,6 +212,25 @@ h1 {
 
 #sidebar
 {
+	padding: 10vh 0 0 0;
+	height:100%;
 	background-color: white;
 	filter:opacity(100%) drop-shadow(5px 0 0.5rem black);
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+
+.sidebar-img {
+	height:auto;
+	width:auto;
+	object-fit: cover;
+	object-position: center;
+	padding: 0;
+	margin:0;
+	filter:opacity(70%);
+	transition: filter .3s;
+}
+
+.sidebar-img:hover {
+	filter:opacity(100%);
 }
