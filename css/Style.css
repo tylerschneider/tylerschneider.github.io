@@ -2,7 +2,7 @@ html, body
 {
 	padding: 0;
 	margin: 0;
-	overflow: hidden;
+	overflow:hidden;
 }
 
 h1 {
@@ -91,7 +91,6 @@ h2 {
 }
 
 .overlay-outer {
-	overflow: hidden;
 	position: relative;
 	top:0;
 	left:0;
@@ -236,7 +235,6 @@ h2 {
 	height:100%;
 	background-color: white;
 	filter:opacity(100%) drop-shadow(5px 0 0.5rem black);
-	overflow-y:scroll;
 	overflow-x:hidden;
 }
 
@@ -259,8 +257,11 @@ h2 {
 #main {
 	height: 100%;
 	padding: 15vh 0 0 0;
-	overflow-y: scroll;
 	overflow-x: hidden;
+}
+
+.icons {
+	text-align: center;
 }
 
 .main-content {
@@ -268,17 +269,31 @@ h2 {
 	font-size: 1.2em;
 }
 
-#main ul {
-	padding: 0 20vw;
+.main-icon {
+	height: 5vh;
+	display: inline-block;
 }
 
-#main img {
+p.main-content {
+	text-indent: 30px;
+}
+
+ul.main-content {
+	padding: 0 10vw;
+}
+
+img.main-content {
 	display: block;
 	margin: auto;
 	max-width: 55vw;
 }
 
-#main:last-child
+.main-content:last-child
 {
 	padding-bottom: 2vh;
+}
+
+hr {
+	width:80%;
+	margin: 3vh auto;
 }

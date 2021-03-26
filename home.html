@@ -9,7 +9,7 @@
 
 	<link rel="stylesheet" href="css/Style.css"/>
 	  
-    <title>Tyler Schneider Portfolio | Home</title>
+	  <title>Tyler Schneider Portfolio | Home</title>
   </head>
   <body>
 	 
@@ -22,7 +22,7 @@
 			
 			<li class="nav-item dropdown col-4 text-center">
 			  <a class="nav-link " href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
-				About Me
+				Information
 			  </a>
 			  <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
 				<li><a class="dropdown-item text-center" href="#">About Me</a></li>
@@ -62,18 +62,15 @@
 	  
 	<div id="container" class="row vh-100 vw-100 p-0 m-0">
 		<div id="sidebar" class="col-3 m-0">
-			<img class="sidebar-img img-fluid" src="images/SpookyHoops.png">
-			<img class="sidebar-img img-fluid" src="images/PocketHealer.png">
-			<img class="sidebar-img img-fluid" src="images/SpookyHoops.png">
-			<img class="sidebar-img img-fluid" src="images/PocketHealer.png">
-			<img class="sidebar-img img-fluid" src="images/SpookyHoops.png">
-			<img class="sidebar-img img-fluid" src="images/PocketHealer.png">
-			<img class="sidebar-img img-fluid" src="images/SpookyHoops.png">
-			<img class="sidebar-img img-fluid" src="images/PocketHealer.png">
-			<img class="sidebar-img img-fluid" src="images/SpookyHoops.png">
+			<button id="SpookyHoops" class="m-0 p-0 border-0"><img class="sidebar-img img-fluid" src="images/SpookyHoops.png"></button>			
+			<button id="Egyptian" class="m-0 p-0 border-0"><img class="sidebar-img img-fluid" src="images/PocketHealer.png"></button>			
+			<button id="PocketHealer" class="m-0 p-0 border-0"><img class="sidebar-img img-fluid" src="images/SpookyHoops.png"></button>			
+			<button id="PocketHealer" class="m-0 p-0 border-0"><img class="sidebar-img img-fluid" src="images/PocketHealer.png"></button>			
+			<button id="SpookyHoops" class="m-0 p-0 border-0"><img class="sidebar-img img-fluid" src="images/SpookyHoops.png"></button>			
+			<button id="PocketHealer" class="m-0 p-0 border-0"><img class="sidebar-img img-fluid" src="images/PocketHealer.png"></button>
 		</div>
 		<div id="main" class="col-9">
-			<h1>Title</h1>
+			<!--<h1>Title</h1>
 			<p class="main-content">This is some example content. It has the purpose of providing an example of how text may be displayed on the page for a portfolio artifact. I think it looks pretty good!</p>
 			<img class="main-content" src="images/PocketHealer.png">
 			<p class="main-content">This is some more example text. Why don't we try a list next?</p>
@@ -90,11 +87,27 @@
 			<h2>Trailer</h2>
 			<div class="main-content ratio ratio-16x9">
 				<iframe class="main-content" src="https://www.youtube.com/embed/VYurOOoLPx4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
+			</div>-->
 		</div>
 	</div>
 
 	  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script>
+		$(document).ready(function(){
+			$("#main").load("SpookyHoops.html");
+
+			$("#SpookyHoops").click( function() {
+					$("#main").load("SpookyHoops.html");
+			});
+			$("#Egyptian").click( function() {
+					$("#main").load("Egyptian.html");
+			});
+			$("#PocketHealer").click( function() {
+					$("#main").load("PocketHealer.html");
+			});
+		});
+		</script>
   </body>
 </html>
