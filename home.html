@@ -37,6 +37,7 @@
 				Portfolio
 			  </a>
 			  <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+				<li><a class="dropdown-item text-center" href="#">All</a></li>
 				<li><a class="dropdown-item text-center" href="#">3D Art</a></li>
 				<li><a class="dropdown-item text-center" href="#">2D Art</a></li>
 				<li><a class="dropdown-item text-center" href="#">Game Dev</a></li>
@@ -62,12 +63,20 @@
 	  
 	<div id="container" class="row vh-100 vw-100 p-0 m-0">
 		<div id="sidebar" class="col-3 m-0">
-			<button id="SpookyHoops" class="m-0 p-0 border-0"><img class="sidebar-img img-fluid" src="images/SpookyHoops.png"></button>			
-			<button id="Egyptian" class="m-0 p-0 border-0"><img class="sidebar-img img-fluid" src="images/PocketHealer.png"></button>			
-			<button id="PocketHealer" class="m-0 p-0 border-0"><img class="sidebar-img img-fluid" src="images/SpookyHoops.png"></button>			
-			<button id="PocketHealer" class="m-0 p-0 border-0"><img class="sidebar-img img-fluid" src="images/PocketHealer.png"></button>			
-			<button id="SpookyHoops" class="m-0 p-0 border-0"><img class="sidebar-img img-fluid" src="images/SpookyHoops.png"></button>			
-			<button id="PocketHealer" class="m-0 p-0 border-0"><img class="sidebar-img img-fluid" src="images/PocketHealer.png"></button>
+			<button id="SpookyHoops" class="m-0 p-0 border-0"><img class="sidebar-img img-fluid" src="images/SpookyHoops.png"></button>
+			
+			<button id="Egyptian" class="m-0 p-0 border-0"><img class="sidebar-img img-fluid" src="images/PocketHealer.png"></button>
+			
+			<button id="PocketHealer" class="m-0 p-0 border-0"><img class="sidebar-img img-fluid" src="images/SpookyHoops.png"></button>
+			
+			<button id="EmojiPlace" class="m-0 p-0 border-0"><img class="sidebar-img img-fluid" src="images/PocketHealer.png"></button>
+			
+			<button id="LitterRide" class="m-0 p-0 border-0"><img class="sidebar-img img-fluid" src="images/SpookyHoops.png"></button>
+			
+			<button id="GimmLogos" class="m-0 p-0 border-0"><img class="sidebar-img img-fluid" src="images/PocketHealer.png"></button>
+			
+			<button id="GimmStudio" class="m-0 p-0 border-0"><img class="sidebar-img img-fluid" src="images/PocketHealer.png"></button>
+			
 		</div>
 		<div id="main" class="col-9">
 			<!--<h1>Title</h1>
@@ -106,6 +115,18 @@
 			});
 			$("#PocketHealer").click( function() {
 					$("#main").load("PocketHealer.html");
+			});
+			$("#EmojiPlace").click( function() {
+					$("#main").load("EmojiPlace.html");
+			});
+			$("#LitterRide").click( function() {
+					$("#main").load("LitterRide.html");
+			});
+			$("#GimmLogos").click( function() {
+					$("#main").load("GimmLogos.html");
+			});
+			$("#GimmStudio").click( function() {
+					$("#main").load("GimmStudio.html");
 			});
 		});
 		</script>
