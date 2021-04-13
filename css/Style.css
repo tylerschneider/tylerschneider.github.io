@@ -94,8 +94,14 @@ h3 {
 
 }
 
+.container
+{
+	margin: 0;
+}
+
 .overlay-outer {
 	position: relative;
+	overflow: hidden;
 	top:0;
 	left:0;
 	height:100vh;
