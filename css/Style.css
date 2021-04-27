@@ -366,3 +366,10 @@ hr {
 	width: 100vw;
 	height: 100vh;
 }
+
+.g-recaptcha
+{
+	display:inline-block;
+	margin: 0;
+	padding: 1vw;
+}
