@@ -24,7 +24,10 @@ h2 {
 }
 
 h3 {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-variant: small-caps;
 	font-size: 2em;
+	text-align: center;
 }
 
 
@@ -240,7 +243,6 @@ h3 {
 
 #sidebar
 {
-
 	padding: 10vh 0 0 0;
 	height:100%;
 	background-color: white;
@@ -263,6 +265,47 @@ h3 {
 	filter:opacity(100%);
 }
 
+.sidebar-avatar {
+	display: block;
+	margin: auto;
+	padding: 2vh;
+	widtH: 20vw;
+	max-width: 400px;
+	min-width: 100px;
+}
+
+.sidebar-list
+{
+	font-size: 1.5em;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar-list, li
+{
+	list-style-type: none;
+}
+
+.sidebar-header
+{
+	font-size: 3em;
+}
+
+.sidebar-icon
+{
+	display: block;
+	margin: 0px auto;
+	padding-top: 5vh;
+}
+
+.sidebar-text
+{
+	text-align: center;
+	font-size: 1.5vw;
+	margin: 0;
+	padding: 0;
+}
 
 #main {
 	height: 100%;
@@ -317,4 +360,9 @@ hr {
 
 .tiny-list {
 	display: inline-block;
+}
+
+#resume {
+	width: 100vw;
+	height: 100vh;
 }
