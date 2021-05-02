@@ -6,28 +6,28 @@ html, body
 }
 
 h1 {
-	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif" !important;
 	font-variant: small-caps;
-	font-size: 4em;
+	font-size: 7vw !important;
+	text-align: center;
+}
+
+h2 {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif" !important;
+	font-variant: small-caps;
+	font-size: 5vw !important;
+	text-align: center;
+}
+
+h3 {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif" !important;
+	font-variant: small-caps;
+	font-size: 3vw !important;
 	text-align: center;
 }
 
 .slider h1 {
 	font-size: 4vw;
-}
-
-h2 {
-	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
-	font-variant: small-caps;
-	font-size: 3em;
-	text-align: center;
-}
-
-h3 {
-	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
-	font-variant: small-caps;
-	font-size: 2em;
-	text-align: center;
 }
 
 
@@ -208,31 +208,57 @@ h3 {
 
 #header
 {
-	max-height: 9vh;
+	width: 20vw;
+	height: 8vh;
+	background-image: url("../images/Logo.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 1vw;
 }
 
 .dropdown
 {
-	height: 9vh;
 	padding: 1vh;
+	background-color: #f8f9fa;
 }
 
 .dropdown, .dropdown-item
 {
-	font-size: 3.5vh;
+	margin: 0;
+	padding: 0;
+	font-size: 2em;
 	font-variant: small-caps;
+	color: #555;
+}
+
+.dropdown-item.active
+{
+	color: black;
+	background-color: #eee;
+}
+
+.dropdown-item.active:hover
+{
+	color: black;
+	background-color: #ddd;
 }
 
 .dropdown-menu
 {
 	border: 0px;
+	border-radius: 0;
+	width: 100%;
+	font-size: 0.4em;
+	margin: 0;
+	padding: 0;
 }
 
 .dropdown:hover, 
 .dropdown:active, 
 .dropdown:focus 
 {
-	background-color:gray;
+	background-color:lightgray;
 }
   
 .navbar .navbar-nav .nav-item
@@ -266,20 +292,18 @@ h3 {
 }
 
 .sidebar-avatar {
-	display: block;
-	margin: auto;
-	padding: 2vh;
-	widtH: 20vw;
-	max-width: 400px;
-	min-width: 100px;
+	height:auto;
+	width:100%;
+	padding: 0;
+	margin:0;
 }
 
 .sidebar-list
 {
-	font-size: 1.5em;
+	font-size: 1em;
 	text-align: center;
 	margin: 0;
-	padding: 0;
+	padding: 1vw;
 }
 
 .sidebar-list, li
@@ -289,7 +313,7 @@ h3 {
 
 .sidebar-header
 {
-	font-size: 3em;
+	/*-size: 3em;*/
 }
 
 .sidebar-icon
@@ -297,19 +321,23 @@ h3 {
 	display: block;
 	margin: 0px auto;
 	padding-top: 5vh;
+	width: 50%;
+	height: auto;
 }
 
 .sidebar-text
 {
 	text-align: center;
-	font-size: 1.5vw;
+	font-size: 2.5vw;
+	font-weight: bold;
 	margin: 0;
 	padding: 0;
 }
 
 #main {
 	height: 100%;
-	padding: 15vh 0 0 0;
+	padding: 10vh 0 0 0;
+	margin-top: 2vh;
 	overflow-x: hidden;
 }
 
@@ -318,8 +346,13 @@ h3 {
 }
 
 .main-content {
-	padding: 2vh 10vw 0 10vw;
-	font-size: 1.2em;
+	padding: 0 10vw 0 10vw;
+	font-size: 1em;
+}
+
+h1.main-content
+{
+	padding-top: 2vh;
 }
 
 .main-icon {
@@ -372,4 +405,93 @@ hr {
 	display:inline-block;
 	margin: 0;
 	padding: 1vw;
+	
+}
+
+body.contact:last-child
+{
+	top: 0px !important;
+	left: 0px !important;
+}
+
+/*For mobile screens*/
+@media(max-width: 970px)
+{
+    .g-container
+	{ 
+		transform:scale(0.7);
+		transform-origin: left;
+	}
+	
+	iframe.main-content
+	{
+		padding: 0 !important;
+		margin: 0;
+		width: 100%;
+		height: auto;
+	}
+	
+	iframe#resume
+	{
+		visibility: hidden;
+	}
+}
+/*for desktop screens*/
+@media(min-width: 970px)
+{
+	h1
+	{
+		font-size: 4vw !important;
+	}
+	
+	h2
+	{
+		font-size: 3vw !important;
+	}
+	
+	h3
+	{
+		font-size: 2vw !important;
+	}
+	
+	#header
+	{
+		width: 23.5vw;
+		height: 9vh;
+		background-image: url("../images/HeaderName.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	
+	.dropdown, .dropdown-item
+	{
+		height: 9vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 2.5em;
+		font-variant: small-caps;
+		padding: 0;
+		margin: 0;
+	}
+	
+	.dropdown-menu
+	{
+		border: 0px;
+		width: 100%;
+		font-size: 0.4em;
+		padding: 0;
+		margin: 0;
+	}
+	
+	.sidebar-list
+	{
+		font-size: 2.5vw;
+	}
+	
+	.main-content
+	{
+		font-size: 1.5em;
+	}
 }
