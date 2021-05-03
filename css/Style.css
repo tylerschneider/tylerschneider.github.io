@@ -346,7 +346,7 @@ h3 {
 
 .main-content {
 	padding: 0 10px;
-	font-size: 0.8em;
+	font-size: 0.75em;
 }
 
 h1.main-content
@@ -355,7 +355,8 @@ h1.main-content
 }
 
 .main-icon {
-	height: 5vh;
+	height: 3vh;
+	padding: 0 10px;
 	display: inline-block;
 }
 
@@ -392,6 +393,7 @@ hr {
 
 .tiny-list {
 	display: inline-block;
+	padding: 5px 0;
 }
 
 #resume {
@@ -405,12 +407,6 @@ hr {
 	margin: 0;
 	padding: 1vw;
 	
-}
-
-body.contact:last-child
-{
-	top: 0px !important;
-	left: 0px !important;
 }
 
 /*For mobile screens*/
@@ -492,7 +488,7 @@ body.contact:last-child
 	
 	.main-content
 	{
-			padding: 0 10vw 0 10vw;
-		font-size: 1.5em;
+		padding: 0 10vw 0 10vw;
+		font-size: 1.2em;
 	}
 }

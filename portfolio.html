@@ -60,6 +60,7 @@
 			<button id="SpookyHoops" class="m-0 p-0 border-0"><img class="sidebar-img img-fluid" src="images/Sidebar/SpookyHoops.png"></button>
 			<button id="PocketHealer" class="m-0 p-0 border-0"><img class="sidebar-img img-fluid" src="images/Sidebar/PocketHealer.png"></button>
 			<button id="BoardGame" class="m-0 p-0 border-0"><img class="sidebar-img img-fluid" src="images/Sidebar/BoardGame.png"></button>
+			<button id="CrazyCart" class="m-0 p-0 border-0"><img class="sidebar-img img-fluid" src="images/Sidebar/CrazyCart.png"></button>
 			<button id="LitterRide" class="m-0 p-0 border-0"><img class="sidebar-img img-fluid" src="images/Sidebar/LitterRide.png"></button>
 			<button id="CashNSlash" class="m-0 p-0 border-0"><img class="sidebar-img img-fluid" src="images/Sidebar/CashNSlash.png"></button>
 			<button id="EmojiPlace" class="m-0 p-0 border-0"><img class="sidebar-img img-fluid" src="images/Sidebar/EmojiPlace.png"></button>
@@ -82,7 +83,15 @@
 		  
 		$(document).ready(function(){
 			//if(localStorage.getItem)
-			$("#main").load("SpookyHoops.html");
+			$("#main").load("VRTMuseum.html");
+
+			$("#VRTMuseum").click( function() {
+					$("#main").load("VRTMuseum.html");
+			});
+
+			$("#GIMMStudio").click( function() {
+					$("#main").load("GimmStudio.html");
+			});
 
 			$("#SpookyHoops").click( function() {
 					$("#main").load("SpookyHoops.html");
